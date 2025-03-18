@@ -1,115 +1,34 @@
-PDF Table Extractor
+# PDF Table Extractor
 
-📌 Project Overview
+## Overview
+This project is a **PDF Table Extractor** that allows users to upload a PDF file, extract tables, and download them as an Excel file. It is built using the **MERN stack** with a clean and modern UI.
 
-PDF Table Extractor is a web application that allows users to upload a PDF file and extract tables from it. The extracted tables can be downloaded as structured data files.
+## Features
+- Upload PDF files containing tables.
+- Extract tables from the PDF without using Tabula or Camelot.
+- Download extracted tables in **Excel format (.xlsx)**.
+- User-friendly interface with a **responsive design**.
 
-🚀 Features
+## Technologies Used
+### Frontend:
+- **React** (with Vite for fast development)
+- **Tailwind CSS** for styling
+- **ShadCN UI components** for enhanced UI
+- **Axios** for API requests
 
-Upload a PDF file
+### Backend:
+- **Node.js & Express.js** for API handling
+- **pdfplumber & Pandas (Python)** for table extraction
+- **Multer** for handling file uploads
+- **Cors** for cross-origin requests
 
-Extract tables using backend processing
+## Installation & Setup
+### Prerequisites
+Ensure you have the following installed:
+- **Node.js** (v16 or later)
+- **Python** (v3.8 or later) with pip installed
 
-Download extracted tables
-
-User-friendly interface with a modern UI
-
-🛠 Tech Stack
-
-Frontend:
-
-React.js (Vite for fast development)
-
-ShadCN/UI (for modern UI components)
-
-Tailwind CSS (for styling)
-
-Axios (for API calls)
-
-Lucide-React (for icons)
-
-Backend:
-
-Node.js & Express.js (for API server)
-
-Multer (for file handling)
-
-PDF Parsing Library (like pdf-table-extract or pdf-lib)
-
-📂 Project Structure
-
-pdf-extractor/
-├── backend/            # Node.js Express backend
-│   ├── server.js       # Main backend logic
-│   ├── routes/         # API routes
-│   ├── uploads/        # Stores uploaded PDFs temporarily
-│   └── extracted/      # Stores extracted table data
-├── frontend/           # React frontend
-│   ├── src/
-│   │   ├── components/ # UI components
-│   │   ├── App.jsx     # Main UI logic
-│   │   ├── index.css   # Styles
-│   │   ├── api.js      # API calls
-│   ├── public/         # Static assets
-│   ├── vite.config.js  # Vite config
-└── README.md           # Project Documentation
-
-🎨 UI Preview
-
-
-
-🏗 Installation & Setup
-
-1️⃣ Clone the Repository
-
+### 1. Clone the repository
+```sh
 git clone https://github.com/yourusername/pdf-table-extractor.git
 cd pdf-table-extractor
-
-2️⃣ Install Dependencies
-
-Frontend:
-
-cd pdf-extractor-frontend
-npm install
-
-Backend:
-
-cd ../pdf-extractor-backend
-npm install
-
-3️⃣ Start the Project
-
-Start Backend Server:
-
-cd pdf-extractor-backend
-node server.js
-
-Start Frontend:
-
-cd pdf-extractor-frontend
-npm run dev
-
-⚡ Usage
-
-Upload a PDF file
-
-Click Extract Tables
-
-Download the extracted tables
-
-📌 Future Improvements
-
-Support for multiple file formats
-
-Table preview before download
-
-Cloud storage integration
-
-🤝 Contributing
-
-Pull requests are welcome! Feel free to open an issue if you find any bugs or want to suggest a new feature.
-
-📜 License
-
-This project is licensed under the MIT License. Feel free to use and modify it!
-
